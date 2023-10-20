@@ -1,178 +1,207 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap');
-
-* {
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto:wght@100;400;700&display=swap');
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-html{
-    font-size: 62.5%;
-}
-
 body{
     min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
 }
-main{
-    background-color: white;
-    height: 100vh;
-}
-
-.headerimg {
-
+header{
     width: 100%;
-    height: 100%;
-}
-.headerIndex{
+    height: 35rem;
     background: url(../assets/img/torta-inicio.jpg) no-repeat;
     background-size: cover;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    height: 94.5rem;
-    width:100%;
 }
-.headerIndex h1{
-    text-align: center;
-    font-size: 6rem;
-    margin-top: 2rem;
-    font-style: italic;
-    font-family: 'Lora', serif;
+.sectionTitulo{
+    width: 100%;
+}
+.sectionTitulo h1{
     color: white;
+    font-family: cursive;
+    /*padding: 3.125rem;*/
+    font-size: 4rem;
+    /*height: 5rem;*/
 }
-.headerIndex p{
-    margin-top: 10rem;
-    margin-right: 9.5rem;
-    margin-left: 150rem;
-    margin-bottom: 50rem;
-    font-size: 2rem;
-    text-align: center;
-    font-size: 3rem;
-    font-family: 'Lora', serif;
-}
-.headerContacto{
-    background-color: purple;
-}
-
-.navbar{
+.navbarmenu{
+    height: 100%;
+    /*display: flex;
+    align-items: center;
+    gap: 4.375rem;
+    padding: 1.25rem;
     list-style: none;
-    text-align: right;
-    background-color: #F2F0E4;
-    margin-left: 100rem;
-    padding: 2rem;
-    margin-top: 6rem;
+    background-color: #F2F0E4;*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .navbar li a{
     text-decoration: none;
-    color: black;
-    padding-right: 8rem;
-    font-size: 2.3rem;
-    background-color: #F2F0E4;
-    text-align: center;
-    font-family: 'Lora', serif;
+    color: white;
+    font-size: 2rem;
 }
-.navbar li{
-    display: inline-block;
 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+main{
+    background: url(../assets/img/background.jpg);
+    background-size: cover;
+}
+.banner p{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 1.5625rem;
+}
+.sectionTortas{
+    display: flex;
+    flex-direction: row;
+    gap: .625rem;
 }
 .divMainimg{
     width: 100%;
-    height: 30rem;
-    text-align: center;
-    font-family: 'Lora', serif;
-    
-} 
-.divSub{
-    display: inline-block;
-    width: 50rem;
-    height: 60rem;
-    padding: 5rem;
-
-}
-h2{
-    padding-bottom: 2rem;
-    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4.375rem;
+    padding: 2.5rem;
 }
 .img{
-    width: 100%;
-    height: 100%;
+    width: 25rem;
+    height: 37.5rem;
 }
-.divLogos{
-    height: 20rem;
-    width: 100%;
-    padding-top: 2rem;
-    padding-right: 2rem;
+footer{
     background-color: #F2F0E4;
-    position: relative;
-   
+    display: flex;
+    justify-content: end;
 }
 .logo{
-    height: 5rem;
-    width: 100%;
-    display:block;
-    text-align: right;
-    margin-bottom: 1rem;
-    
+    width: 3.75rem;
+    height: 3.75rem;
 }
-.imglogo{
-    width: 4rem;
+.imgLogo{
+    display: flex;
+    width: 3.75rem;
+    height: 3.75rem;
+    padding: .625rem;
 }
 
-.tortas{
-    width: 100%;
-    height: 170rem;
-    text-align: center;
-    background-image: url(../assets/img/background.jpg);
+@media(max-width:1024px){
+    header{
+        height: 29.375rem;
+    }
+    .sectionTitulo{
+        height: 24.375rem;
+    }
+    .img{
+        width: 15.625rem;
+        height: 21.875rem;
+    }
+    .navbar li a{
+        font-size: 1.5625rem;
+    }
+}
+@media(max-width:768px){
+    header{
+        height: 12.5rem;
+    }
+    .banner{
+        font-size: 1.25rem;
+    }
+    .navbar li a{
+        font-size: 1.25rem;
+    }
+}
+@media(max-width:425px){
+    header h1{
+        font-size: 2.5rem;
+    }
+    .navbar{
+        width: 100%;
+    }
+    body{
+        width: 30rem;
+    }
+}
+@media(max-width:320px){
+    header{
+        background-size: cover;
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     
+    }
+    .navbar{
+        display: flex;
+        padding-right: none;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    body{
+        width: 30rem;
+    }
 }
-.tortas h2{
+main section h2{
+    font-size: 2.5rem;
     text-align: center;
-    padding: 1rem;
-    margin-bottom: 5rem;
-    font-size: 3rem;
-    padding-top: 3rem;
+    padding: 1.875rem;
 }
-.tortasInfantiles{
+.contenedorImg{
+    padding-bottom: 37.5rem;
     width: 100%;
-    height: 70rem;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "sectionUno"
+    "sectionDos"
+    "sectionTres"
+    "sectionCuatro"
+    ;
 }
-.tortasImg{
-    width: 50rem;
-    height: 60rem;
-    display:inline;
-    padding: 1rem;
-    margin-right: 5rem;
-    margin-left: 5rem;
+.contenedorImg img{
+    width: 25rem;
+    height: 37.5rem;
 }
-.parrafotorta{
+.sectionUno{
+    width: 100%;
+    grid-area: sectionUno;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     text-align: center;
-    font-size: 4rem;
-    padding-bottom: 10rem;
-    margin: 3rem;
+    gap: 1.875rem;
+}
+.sectionUno p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 3.75rem;
+    font-style: italic;
+}
+.sectionDos{
+    grid-area: sectionDos;
+}
+.sectionTres{
+    grid-area: sectionTres;
+}
+.sectionCuatro{
+    grid-area: sectionCuatro;
+}
+.texto{
+    font-size: 1.875rem;
+    padding: 1.25rem;
 }
 .ubicacion{
-    padding: 3rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem;
 }
-.divContacto{
-    
-    height: 30rem;
-    width: 30rem;
-    margin-top: 10rem;
-    margin-right: 9.5rem;
-    margin-left: 165rem;
-    margin-bottom: 50rem;
-    font-size: 2rem;
-    text-align: center;
-    font-size: 3rem;
-
-}
-.imgContacto{
-    height: 5rem;
-    width: 5rem;
-    display:block;
-    text-align: right;
-
+.divLogos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
